@@ -16,9 +16,13 @@
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
-    "test": "jest"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "jest": "^30.5.2"
+  },
+  "dependencies": {
+    "jsdom": "^27.0.0"
   }
 }
